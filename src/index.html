@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Omu System</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="md:flex bg-[url('/bg-2.jpg')] pt-6 text-white bg-center bg-cover text-center relative transition-all">
+        <div class="container mx-auto p-2.5 md:mb-12">
+            <div class="bg-black opacity-60 absolute w-full h-full top-0 left-0"></div>
+            <div class="mx-auto relative" style="max-width: 1170px;">
+
+                <!-- Navigation Bar -->
+                <nav class="px-4 sm:px-4 py-2.5">
+                    <div class="container flex flex-wrap items-center justify-between mx-auto" style="max-width: 1170px;">
+                        <!-- Logo -->
+                        <a href="https://jovshop.site/" class="flex items-center">
+                            <span class="self-center text-5xl font-semibold whitespace-nowrap dark:text-white tracking-wider" style="font-family: 'Teko';">Omu Systems</span>
+                        </a>
+                        <!-- Mobile Menu Button -->
+                        <div id="mobile-menu-button">
+                            <button data-collapse-toggle="navbar-default" type="button" aria-controls="navbar-default" aria-expanded="false" class="bg-purple-800 inline-flex items-center p-1 ml-3 text-white md:hidden hover:bg-gray-100 focus:outline-none focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                            </button>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div id="mobile-menu" class="hidden md:hidden bg-black w-3/5 right-0 fixed h-full top-0 text-left">
+                            <div class="block cursor-pointer text-2xl font-bold absolute bg-" style="color: rgba(255,255,255,0.41);">
+                                <i id="exit" class="fas fa-times p-2 font-extrabold"></i>
+                            </div>
+                            <div class="md:flex text-sm font-bold tracking-wide mt-2">
+                                <a href="index.html" class="block py-4 px-6 text-purple-800 hover:text-purple-800 md:p-0" aria-current="page">HOME</a>
+                                <a href="about.html" class="block py-4 px-6 text-white hover:text-purple-800 md:p-0 duration-700">BIODATA</a>
+                                <a href="contact.html" class="block py-4 px-6 text-white hover:text-purple-800 md:p-0 duration-700">CONTACT US</a>
+                                <a href="https://unai.edu/" class="block py-4 px-6 text-white hover:text-purple-800 md:p-0 duration-700">UNAI</a>
+                                <a href="https://fti.unai.edu/" class="block py-4 px-6 text-white hover:text-purple-800 md:p-0 duration-700">FTI UNAI</a>
+                                <a href="free.html" class="block py-4 px-6 text-white hover:text-purple-800 md:p-0 duration-700">FREE</a>
+                            </div>
+                        </div>
+                        <!-- Menu -->
+                        <div class="hidden md:block md:w-auto" id="navbar-default">
+                            <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-10 md:mt-0 md:text-sm md:font-bold" style="font-family: 'Poppins';">
+                                <li>
+                                    <a href="index.html" class="block py-2 pl-3 pr-4 text-purple-800 hover:text-purple-800 md:p-0 duration-700" aria-current="page">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="block py-2 pl-3 pr-4 text-white hover:text-purple-800 md:p-0 duration-700">BIODATA</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="block py-2 pl-3 pr-4 text-white hover:text-purple-800 md:p-0 duration-700">CONTACT US</a>
+                                </li>
+                                <li>
+                                    <a href="https://unai.edu/" class="block py-2 pl-3 pr-4 text-white hover:text-purple-800 md:p-0 duration-700">UNAI</a>
+                                </li>
+                                <li>
+                                    <a href="https://fti.unai.edu/" class="block py-2 pl-3 pr-4 text-white hover:text-purple-800 md:p-0 duration-700">FTI UNAI</a>
+                                </li>
+                                <li>
+                                    <a href="free.html" class="block py-2 pl-3 pr-4 text-white hover:text-purple-800 md:p-0 duration-700">FREE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Navigation Bar -->
+
+                <div class="py-24 md:py-36 p-2.5">
+                    <div class="mt-5 md:font-semibold md:mx-11 leading-none md:leading-normal md:text-4xl text-3xl" style="font-family: 'Nunito';">
+                        Kami Hadir Sebagai Solusi Kebutuhan IT Anda
+                    </div>
+                    <div class="text-5xl md:text-6xl mt-5 font-semibold md:tracking-wide" style="font-family: 'Nunito';">
+                        Ōmu Systems
+                    </div>
+                    <div class="container mx-auto" style="width: 10%;">
+                        <div class="border-b-4 border-purple-800 pb-8 mb-5"></div>
+                    </div>
+                    <div class="text-sm text-center max-w-screen-md mx-auto" style="font-family: 'Poppins';">
+                        <p class="leading-loose font-medium">Kami membantu proses perencanaan, proses implementasi sampai proses support setelahnya. Penyederhanaan proses implementasi membuat waktu dan biaya yang dibutuhkan menjadi terjangkau untuk perseorangan ataupun perusahaan</p>
+                    </div>
+                    <div class="mt-12 pb-11 md:pb-0">
+                        <a class="bg-purple-800 p-3 px-6" href="#1" style="font-family: 'Poppins';">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+    <!-- Body -->
+    <div class="mx-auto" style="max-width: 1170px;">
+        <div>
+            <div class="mb-14">
+                <div class="container mx-auto">
+                    <div class="text-center text-5xl mt-24" style="font-family: 'Nunito';">
+                        Type of Services
+                    </div>
+                </div>
+                <div class="container mx-auto" style="width: 10%;">
+                    <div class="border-b-4 border-purple-800 pb-8 mb-10"></div>
+                </div>
+            </div>
+            <div class="md:flex flex-row">
+                <div class="container md:flex mx-auto max-w-7xl">
+                    <div class="basis-1/3 p-2.5">
+                        <div class="text-sm text-center" style="font-family: 'Poppins';">
+                            <div class="flex justify-center">
+                                <div>
+                                    <img class="w-36" src="/icont-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <p class="text-2xl font-semibold tracking-wide" style="font-family: 'Nunito';">Internet Solution</p>
+                            </div>
+                            <p class="leading-loose font-medium text-gray-600">Memastikan internet anda dapat diakses dengan maksimal dan merata.</p>
+                        </div>
+                    </div>
+                    <div class="basis-1/3 p-3">
+                        <div class="text-sm text-center" style="font-family: 'Poppins';">
+                            <div class="flex justify-center">
+                                <div>
+                                    <img class="w-36" src="/icon-5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <p class="text-2xl font-semibold tracking-wide" style="font-family: 'Nunito';">Hardware Solution</p>
+                            </div>
+                            <p class="leading-loose font-medium text-gray-600">Komputer,Laptop,HP dan perangkat lainnya mengalami masalah, kami memiliki tim yang handal dalam perbaiki ataupun merawat  perangkat anda.</p>
+                        </div>
+                    </div>
+                    <div class="basis-1/3 p-3">
+                        <div class="text-sm text-center" style="font-family: 'Poppins';">
+                            <div class="flex justify-center">
+                                <div>
+                                    <img class="w-36" src="/icon-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <p class="text-2xl font-semibold tracking-wide" style="font-family: 'Nunito';">Software Solution</p>
+                            </div>
+                            <p class="leading-loose font-medium text-gray-600">Usaha anda membutuhkan program untuk menunjang dan mengotomasi perkerjaan yang ada ?<br>Tim kami ahlinya dalam memenuhi kebutuhan tersebut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:flex flex-row mt-7">
+                <div class="container md:flex mx-auto max-w-7xl">
+                    <div class="basis-1/3 p-2.5">
+                        <div class="text-sm text-center" style="font-family: 'Poppins';">
+                            <div class="flex justify-center">
+                                <div>
+                                    <img class="w-36" src="/icon-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <p class="text-2xl font-semibold tracking-wide" style="font-family: 'Nunito';">Website Solution</p>
+                            </div>
+                            <p class="leading-loose font-medium text-gray-600">Kami siap membantu usaha anda agar di kenal secara online dengan desian website dan SEO  terbaik.</p>
+                        </div>
+                    </div>
+                    <div class="basis-1/3 p-2.5">
+                        <div class="text-sm text-center" style="font-family: 'Poppins';">
+                            <div class="flex justify-center">
+                                <div>
+                                    <img class="w-36" src="/icon-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <p class="text-2xl font-semibold tracking-wide" style="font-family: 'Nunito';">Server Solution</p>
+                            </div>
+                            <p class="leading-loose font-medium text-gray-600">Usaha anda membutuhkan server internal untuk pengarsipan atau distribusi data ?<br>Tim kami siap untuk membantu pembuatan server internet ataupun intranet.</p>
+                        </div>
+                    </div>
+                    <div class="basis-1/3 p-2.5">
+                        <div class="text-sm text-center" style="font-family: 'Poppins';">
+                            <div class="flex justify-center">
+                                <div>
+                                    <img class="w-36" src="/icon-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <p class="text-2xl font-semibold tracking-wide" style="font-family: 'Nunito';">IoT Solution</p>
+                            </div>
+                            <p class="leading-loose font-medium text-gray-600">Kami siap membantu usaha anda agar di kenal secara online dengan desian website dan SEO  terbaik.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="/tabel.jpg">
+        </div>
+    </div>
+
+    <div class="mb-14">
+        <div class="mx-auto" style="max-width: 1170px;">
+            <div class="container mx-auto">
+                <div class="text-center text-5xl mt-20" style="font-family: 'Nunito';">
+                    Kenapa harus Ōmu Systems ?
+                </div>
+            </div>
+            <div class="container mx-auto " style="width: 10%;">
+                <div class="border-b-4 border-purple-800 pb-8 mb-10"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="md:flex flex-row mb-24">
+        <div class="container md:flex mx-auto max-w-7xl px-16">
+            <div class="basis-1/3 p-3">
+                <div class="p-5 text-base text-center">
+                    <div class="flex justify-center">
+                        <div class=" bg-purple-900 text-4xl rounded-full text-white py-5 px-6">
+                            <i class="fas fa-bolt icon"></i>
+                        </div>
+                    </div>
+                    <div class="mt-2 mb-3">
+                        <p class="text-2xl font-semibold">Pelayanan Cepat</p>
+                    </div>
+                    <p>Kecepatan dan ketepatan solusi yang kami berikan, akan menghilangkan rasa khawatir anda dengan masalah IT yang ada.</p>
+                </div>
+            </div>
+            <div class="basis-1/3 p-3">
+                <div class="p-5 text-base text-center">
+                    <div class="flex justify-center">
+                        <div class=" bg-purple-900 text-4xl rounded-full text-white py-5 px-5">
+                            <i class="fas fa-money-bill icon"></i>
+                        </div>
+                    </div>
+                    <div class="mt-2 mb-3">
+                        <p class="text-2xl font-semibold">Harga Terbaik</p>
+                    </div>
+                    <p>Temukan harga terbaik untuk setiap layanan yang kami berikan.</p>
+                </div>
+            </div>
+            <div class="basis-1/3 p-3">
+                <div class="p-5 text-base text-center">
+                    <div class="flex justify-center">
+                        <div class=" bg-purple-900 text-3xl rounded-full text-white py-5 px-5">
+                            <i class="fas fa-handshake icon"></i>
+                        </div>
+                    </div>
+                    <div class="mt-2 mb-3">
+                        <p class="text-2xl font-semibold">Profesional Support</p>
+                    </div>
+                    <p>Tim kami terdiri dari profesional di bidangnya, semua kerahasian bisnis anda dapat anda percayakan ke kami.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="md:flex bg-[url('/bg-1.jpg')] py-8 text-white bg-center bg-fixed bg-cover text-center relative">
+        <div class="container mx-auto">
+            <div class="bg-black opacity-50 absolute w-full h-full top-0 left-0"></div>
+            <div class="relative">
+                <div class="mx-auto" style="max-width: 1170px;">
+                    <div class="text-5xl mt-20" style="font-family: 'Nunito';">
+                        Let The Number Speak
+                    </div>
+                    <div class="container mx-auto" style="width: 10%;">
+                        <div class="border-b-4 border-white pb-8 mb-10"></div>
+                    </div>
+                </div>
+                <div class="md:flex flex-row">
+                    <div class="container md:flex mx-auto mt-5 max-w-7xl px-16 mb-16" style="font-family: 'Nunito';"> 
+                        <div class="basis-1/4">
+                            <div class="font-medium text-5xl">50+</div>
+                            <div class="font-medium text-lg mb-5">IoT Installation</div>
+                        </div>                    <div class="basis-1/4">
+                            <div class="font-medium text-5xl">150+</div>
+                            <div class="font-medium text-lg mb-5">Software Support</div>
+                        </div>                    <div class="basis-1/4">
+                            <div class="font-medium text-5xl">200+</div>
+                            <div class="font-medium text-lg mb-5">Satisfied Clients</div>
+                        </div>                    <div class="basis-1/4">
+                            <div class="font-medium text-5xl">500+</div>
+                            <div class="font-medium text-lg mb-5">Websites Created</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto" style="max-width: 1170px;">
+        <div>
+            <div class="container mx-auto">
+                <div class="text-center text-5xl mt-20" style="font-family: 'Nunito';">
+                    Testimonials
+                </div>
+            </div>
+            <div class="container mx-auto " style="width: 10%;">
+                <div class="border-b-4 border-purple-800 pb-8 mb-10"></div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="md:flex flex-row pb-14">
+        <div class="container md:flex mx-auto max-w-7xl px-16">
+            <div class="basis-1/3 p-3">
+                <div class="p-5 text-base" style="box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1)">
+                    <p>Support cepat dan tepat untuk manage internet di semua user</p>
+                    <div class="md:flex mt-5">
+                        <div>
+                            <img class="w-24 rounded-full" src="/vmk-1.png" alt="">
+                        </div>
+                        <div class="basis-4/5 pr-3 mt-3 ml-1">
+                            <p class="text-lg font-semibold">Adit Tian</p>
+                            <p class="text-base text-purple-800 font-bold tracking-wide">Pengelola Yayasan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-1/3 p-3">
+                <div class="p-5 text-base" style="box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1)">
+                    <p>IoT disetiap unit dikerjakan dengan profesional dan handal</p>
+                    <div class="md:flex mt-5">
+                        <div>
+                            <img class="w-24 rounded-full" src="/vmk-2.jpg" alt="">
+                        </div>
+                        <div class="basis-4/5 pr-3 mt-3 ml-1">
+                            <p class="text-lg font-semibold">Akbar</p>
+                            <p class="text-base text-purple-800 font-bold tracking-wide">Pengelola Perumahan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-1/3 p-3">
+                <div class="p-5 text-base" style="box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1)">
+                    <p>Bisnis bengkel online saya sangat terbantu dengan website yang menarik</p>
+                    <div class="md:flex mt-5">
+                        <div>
+                            <img class="w-24 rounded-full" src="/vmk-3.png" alt="">
+                        </div>
+                        <div class="basis-4/5 pr-3 mt-3 ml-1">
+                            <p class="text-lg font-semibold">Arip</p>
+                            <p class="text-base text-purple-800 font-bold tracking-wide">Pemilik Bengkel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Body -->
+
+    <!-- Footer -->
+    <div class="md:flex flex-row bg-black py-6 text-white bg-opacity-90">
+        <div class="md:flex mx-auto">
+            <div class="basis-1/2 p-2.5">
+                <span class="font-medium text-3xl text-purple-800 mb-5">Omu Systems</span>
+                <div class="text-base mt-5 leading-7 pr-5">
+                    <p>Konsultasikan kendala IT anda segera, kami akan berikan solusi dan penanganan profesional dengan harga bersahabat</p>
+                </div>
+                <div class="flex flex-row flex-wrap mt-5 text-center text-sm w-full">
+                    <div class="basis-1/11">
+                        <div class="b-icon">
+                            <a href="https://www.facebook.com/joefins.situmorang" class="fab fa-facebook-f bg-purple-900 rounded-full p-3 px-3.5 m-1 hover:bg-blue-700" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="basis-1/11">
+                        <div class="b-icon">
+                            <a href="#" class="fab fa-twitter bg-purple-900 rounded-full p-3 m-1 hover:bg-blue-700" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="basis-1/11">
+                        <div class="b-icon">
+                            <a href="https://www.instagram.com/joefins_s/?hl=id" class="fab fa-instagram bg-purple-900 rounded-full p-3 m-1 hover:bg-blue-700" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div href="" class="basis-1/11">
+                        <div class="b-icon">
+                            <a href="#" class="fab fa-linkedin-in bg-purple-900 rounded-full p-3 m-1 hover:bg-blue-700" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-1/6 p-2.5">
+                <span class="font-medium text-xl text-purple-800 mb-5 pb-5">Quick Links</span> <br>
+                <div class="font-medium text-sm mt-5">
+                    <a href="index.html" class="flex pb-5">Home</a>
+                    <a href="about.html" class="flex pb-5">Biodata</a>
+                    <a href="https://www.instagram.com/joefins_s/?hl=id" class="flex pb-5">Services</a>
+                    <a href="contact.html" class="flex pb-5">Contact Us</a>
+                </div>
+            </div>
+            <div class="basis-1/4 p-2.5">
+                <span class="font-medium text-xl text-purple-800 mb-5 pb-5">Get In Touch</span> <br>
+                <div class="text-base mt-5">
+                    <a href="#" class="flex pb-5">support@omusystems.com</a>
+                    <a href="#" class="flex pb-5">+6285161929595</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class=" bg-purple-900 text-white tracking-wide">
+            <div class="container flex flex-wrap items-center justify-between mx-auto" style="max-width: 1170px;">
+                <div class="py-5 font-medium text-base px-3 md:px-0">
+                    <a class=" hover:text-blue-500" href="#">&copy; 2022 Omu Systems |</a> <a class=" hover:text-blue-500" href="#">PopularFX Theme</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+    <script>
+        const btn = document.querySelector("#mobile-menu-button");
+        const menu = document.querySelector("#mobile-menu");
+        const exit = document.querySelector("#exit");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
+        exit.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
